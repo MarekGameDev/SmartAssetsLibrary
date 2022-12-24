@@ -25,7 +25,12 @@ public:
 
 private:
 
-	UPROPERTY(EditAnywhere)
-	class UStaticMeshComponent* Body;
+
+	UPROPERTY(EditAnywhere, Category = "Body meshes")
+	class UBoxComponent* Collider;
+
+	UPROPERTY(EditAnywhere, Category = "Body meshes")
+	class UStaticMeshComponent* Head;
+
 
 };
